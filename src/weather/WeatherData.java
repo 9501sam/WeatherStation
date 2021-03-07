@@ -8,6 +8,10 @@ public class WeatherData implements Subject {
   private float humidity;
   private float pressure;
 
+  public WeatherData() {
+    observers = new ArrayList();
+  }
+
   public void regiterObserver(Observer o) {
     observers.add(o);
   }
